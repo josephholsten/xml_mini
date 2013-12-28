@@ -1,0 +1,5 @@
+require 'minitest/autorun'
+require 'minitest/pride'
+require 'xml_mini'
+require 'xml_mini/core_ext/array/conversions'
+require 'xml_mini/core_ext/hash/conversions'
