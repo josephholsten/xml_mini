@@ -66,7 +66,7 @@ module XmlMini
           end
 
           # Remove content node if it is blank and there are child tags
-          if node_hash.length > 1 && (content_root.respond_to?(:empty?) ? content_root.empty? : !content_root)
+          if node_hash.length > 1 && content_root.blank?
             node_hash.delete(CONTENT_ROOT)
           end
 
