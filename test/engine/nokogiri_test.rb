@@ -84,22 +84,22 @@ class NokogiriEngineTest < MiniTest::Spec
     eoxml
   end
 
-#   def test_products_node_with_book_node_as_hash
-#     assert_equal_rexml(<<-eoxml)
-#     <products>
-#       <book name="awesome" id="12345" />
-#     </products>
-#     eoxml
-#   end
+  def test_products_node_with_book_node_as_hash
+    assert_equal_rexml(<<-eoxml)
+    <products>
+      <book name="awesome" id="12345" />
+    </products>
+    eoxml
+  end
 
-#   def test_products_node_with_two_book_nodes_as_hash
-#     assert_equal_rexml(<<-eoxml)
-#     <products>
-#       <book name="awesome" id="12345" />
-#       <book name="america" id="67890" />
-#     </products>
-#     eoxml
-#   end
+  def test_products_node_with_two_book_nodes_as_hash
+    assert_equal_rexml(<<-eoxml)
+    <products>
+      <book name="awesome" id="12345" />
+      <book name="america" id="67890" />
+    </products>
+    eoxml
+  end
 
 #   def test_single_node_with_content_as_hash
 #     assert_equal_rexml(<<-eoxml)
@@ -109,15 +109,15 @@ class NokogiriEngineTest < MiniTest::Spec
 #     eoxml
 #   end
 
-#   def test_children_with_children
-#     assert_equal_rexml(<<-eoxml)
-#     <root>
-#       <products>
-#         <book name="america" id="67890" />
-#       </products>
-#     </root>
-#     eoxml
-#   end
+  def test_children_with_children
+    assert_equal_rexml(<<-eoxml)
+    <root>
+      <products>
+        <book name="america" id="67890" />
+      </products>
+    </root>
+    eoxml
+  end
 
 #   def test_children_with_text
 #     assert_equal_rexml(<<-eoxml)
